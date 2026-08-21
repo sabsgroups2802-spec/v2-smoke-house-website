@@ -12,8 +12,8 @@ html {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background: #0b0b0b;
-    color: #ffffff;
+    background: #090909;
+    color: #f5f2ed;
 }
 
 
@@ -22,25 +22,24 @@ body {
 .navbar {
     width: 100%;
     padding: 22px 7%;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     position: fixed;
     top: 0;
     left: 0;
-
     z-index: 1000;
 
-    background: rgba(0, 0, 0, 0.85);
+    background: rgba(5, 5, 5, 0.92);
     backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(212, 166, 78, 0.15);
 }
 
 .logo {
     font-size: 22px;
     font-weight: 800;
     letter-spacing: 2px;
+    color: #f5f2ed;
 }
 
 .navbar nav {
@@ -49,17 +48,15 @@ body {
 }
 
 .navbar nav a {
-    color: #ffffff;
+    color: #ddd6ca;
     text-decoration: none;
-
     font-size: 14px;
     font-weight: 600;
-
     transition: 0.3s;
 }
 
 .navbar nav a:hover {
-    color: #ff6a00;
+    color: #d4a64e;
 }
 
 
@@ -67,23 +64,20 @@ body {
 
 .hero {
     min-height: 100vh;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     text-align: center;
-
     padding: 120px 20px 60px;
 
     background:
         linear-gradient(
-            rgba(0, 0, 0, 0.65),
-            rgba(0, 0, 0, 0.9)
+            rgba(0, 0, 0, 0.68),
+            rgba(0, 0, 0, 0.92)
         ),
         radial-gradient(
             circle at center,
-            #4a1d00,
+            #352714,
             #080808 65%
         );
 }
@@ -98,51 +92,40 @@ body {
 .hero-logo {
     width: 180px;
     height: 180px;
-
     object-fit: contain;
-
     display: block;
-
     margin: 0 auto 25px;
 }
 
 
 .small-title,
 .section-small-title {
-    color: #ff6a00;
-
+    color: #d4a64e;
     font-size: 14px;
     font-weight: 700;
-
     letter-spacing: 4px;
-
     margin-bottom: 18px;
 }
 
 
 .hero h1 {
     font-size: clamp(60px, 10vw, 130px);
-
     line-height: 0.9;
-
     font-weight: 900;
-
     letter-spacing: -4px;
+    color: #f5f2ed;
 }
 
 .hero h1 span,
 section h2 span {
-    color: #ff6a00;
+    color: #d4a64e;
 }
 
 
 .tagline {
     margin-top: 30px;
-
-    color: #cccccc;
-
+    color: #c5beb3;
     font-size: 20px;
-
     letter-spacing: 2px;
 }
 
@@ -153,49 +136,43 @@ section h2 span {
 .contact-buttons,
 .order-buttons {
     margin-top: 40px;
-
     display: flex;
     justify-content: center;
-
     gap: 15px;
-
     flex-wrap: wrap;
 }
 
 .btn {
     display: inline-block;
-
     padding: 15px 30px;
-
     text-decoration: none;
-
     font-size: 13px;
     font-weight: 800;
-
     letter-spacing: 1px;
-
     transition: 0.3s;
 }
 
 .primary-btn {
-    background: #ff6a00;
-    color: #ffffff;
+    background: #d4a64e;
+    color: #15110a;
+    border: 1px solid #d4a64e;
 }
 
 .primary-btn:hover {
-    background: #ff8533;
+    background: #e6bc69;
+    border-color: #e6bc69;
     transform: translateY(-3px);
 }
 
 .secondary-btn {
-    border: 1px solid #ffffff;
-    color: #ffffff;
+    border: 1px solid #ddd6ca;
+    color: #f5f2ed;
+    background: transparent;
 }
 
 .secondary-btn:hover {
-    background: #ffffff;
-    color: #000000;
-
+    background: #f5f2ed;
+    color: #111111;
     transform: translateY(-3px);
 }
 
@@ -204,20 +181,16 @@ section h2 span {
 
 .menu-section {
     padding: 120px 7%;
-
     text-align: center;
-
-    background: #111111;
+    background: #11110f;
 }
 
 section h2 {
     font-size: clamp(40px, 6vw, 70px);
-
     line-height: 1;
-
     margin-bottom: 60px;
-
     font-weight: 900;
+    color: #f5f2ed;
 }
 
 
@@ -226,9 +199,7 @@ section h2 {
 .menu-image-container {
     width: 100%;
     max-width: 700px;
-
     margin: 0 auto;
-
     display: flex;
     justify-content: center;
 }
@@ -236,12 +207,10 @@ section h2 {
 .menu-image {
     width: 100%;
     max-width: 700px;
-
     height: auto;
-
     display: block;
 
-    border: 1px solid #292929;
+    border: 1px solid #302c25;
 
     box-shadow:
         0 15px 40px rgba(0, 0, 0, 0.5);
@@ -254,55 +223,43 @@ section h2 {
 
 .menu-grid {
     max-width: 1100px;
-
     margin: auto;
-
     display: grid;
-
     grid-template-columns: repeat(3, 1fr);
-
     gap: 25px;
 }
 
 .menu-card {
-    background: #181818;
-
+    background: #181816;
     padding: 40px 25px;
-
-    border: 1px solid #292929;
-
+    border: 1px solid #302c25;
     transition: 0.3s;
 }
 
 .menu-card:hover {
     transform: translateY(-8px);
-
-    border-color: #ff6a00;
+    border-color: #d4a64e;
 }
 
 .food-icon {
     font-size: 55px;
-
     margin-bottom: 20px;
 }
 
 .menu-card h3 {
     font-size: 22px;
-
     margin-bottom: 15px;
+    color: #f5f2ed;
 }
 
 .menu-card p {
-    color: #999999;
-
+    color: #99938a;
     line-height: 1.7;
-
     margin-bottom: 20px;
 }
 
 .menu-card strong {
-    color: #ff6a00;
-
+    color: #d4a64e;
     font-size: 18px;
 }
 
@@ -311,20 +268,18 @@ section h2 {
 
 .about-section {
     padding: 130px 7%;
-
     min-height: 600px;
-
     display: flex;
     align-items: center;
 
     background:
         linear-gradient(
-            rgba(0, 0, 0, 0.8),
-            rgba(0, 0, 0, 0.9)
+            rgba(0, 0, 0, 0.82),
+            rgba(0, 0, 0, 0.92)
         ),
         radial-gradient(
             circle at 80% 50%,
-            #3b1700,
+            #302313,
             #090909 60%
         );
 }
@@ -334,12 +289,9 @@ section h2 {
 }
 
 .about-content p:last-child {
-    color: #aaaaaa;
-
+    color: #aaa49b;
     font-size: 18px;
-
     line-height: 1.9;
-
     max-width: 650px;
 }
 
@@ -348,49 +300,36 @@ section h2 {
 
 .gallery-section {
     padding: 120px 7%;
-
     text-align: center;
-
-    background: #111111;
+    background: #11110f;
 }
 
 .gallery-grid {
     max-width: 1100px;
-
     margin: auto;
-
     display: grid;
-
     grid-template-columns: repeat(4, 1fr);
-
     gap: 18px;
 }
 
 .gallery-box {
     height: 220px;
-
     overflow: hidden;
-
-    background: #1b1b1b;
-
-    border: 1px solid #292929;
-
+    background: #181816;
+    border: 1px solid #302c25;
     transition: 0.3s;
 }
 
 .gallery-box img {
     width: 100%;
     height: 100%;
-
     object-fit: cover;
-
     display: block;
-
     transition: 0.4s ease;
 }
 
 .gallery-box:hover {
-    border-color: #ff6a00;
+    border-color: #d4a64e;
 }
 
 .gallery-box:hover img {
@@ -398,36 +337,29 @@ section h2 {
 }
 
 
-/* ================================================= */
-/* ================= ORDER SECTION ================= */
-/* ================================================= */
+/* ================= ORDER ================= */
 
 .order-section {
     padding: 130px 7%;
-
     text-align: center;
 
     background:
         linear-gradient(
-            rgba(0, 0, 0, 0.82),
+            rgba(0, 0, 0, 0.84),
             rgba(0, 0, 0, 0.95)
         ),
         radial-gradient(
             circle at center,
-            #4a1d00,
+            #352714,
             #080808 65%
         );
 }
 
 .order-description {
-    color: #aaaaaa;
-
+    color: #aaa49b;
     font-size: 17px;
-
     line-height: 1.7;
-
     max-width: 600px;
-
     margin: -30px auto 45px;
 }
 
@@ -436,32 +368,23 @@ section h2 {
 
 .order-container {
     max-width: 1100px;
-
     margin: 0 auto;
-
     display: grid;
-
     grid-template-columns: repeat(3, 1fr);
-
     gap: 22px;
-
     text-align: left;
 }
 
 .order-card {
-    background: #181818;
-
-    border: 1px solid #292929;
-
+    background: #181816;
+    border: 1px solid #302c25;
     overflow: hidden;
-
     transition: 0.3s;
 }
 
 .order-card:hover {
     transform: translateY(-6px);
-
-    border-color: #ff6a00;
+    border-color: #d4a64e;
 }
 
 
@@ -469,22 +392,16 @@ section h2 {
 
 .order-food-image {
     width: 100%;
-
     height: 210px;
-
     overflow: hidden;
-
-    background: #111111;
+    background: #10100f;
 }
 
 .order-food-image img {
     width: 100%;
     height: 100%;
-
     object-fit: cover;
-
     display: block;
-
     transition: 0.4s ease;
 }
 
@@ -501,17 +418,14 @@ section h2 {
 
 .order-card-content h3 {
     font-size: 21px;
-
     margin-bottom: 10px;
+    color: #f5f2ed;
 }
 
 .order-card-content p {
-    color: #999999;
-
+    color: #99938a;
     font-size: 14px;
-
     line-height: 1.6;
-
     margin-bottom: 20px;
 }
 
@@ -520,114 +434,77 @@ section h2 {
 
 .order-bottom {
     display: flex;
-
     justify-content: space-between;
-
     align-items: center;
 }
 
 .order-bottom strong {
-    color: #ff6a00;
-
+    color: #d4a64e;
     font-size: 20px;
 }
 
 .add-btn {
     border: none;
-
-    background: #ff6a00;
-
-    color: #ffffff;
-
+    background: #d4a64e;
+    color: #15110a;
     padding: 10px 20px;
-
     font-size: 12px;
-
     font-weight: 800;
-
     letter-spacing: 1px;
-
     cursor: pointer;
-
     transition: 0.3s;
 }
 
 .add-btn:hover {
-    background: #ff8533;
-
+    background: #e6bc69;
     transform: translateY(-2px);
 }
 
 
-/* ================================================= */
 /* ================= CART ================= */
-/* ================================================= */
 
 .cart-box {
     max-width: 700px;
-
     margin: 55px auto 0;
-
     padding: 30px;
-
-    background: #151515;
-
-    border: 1px solid #292929;
-
+    background: #151513;
+    border: 1px solid #302c25;
     text-align: left;
 }
 
 .cart-box h3 {
     font-size: 22px;
-
     margin-bottom: 20px;
-
     letter-spacing: 1px;
 }
 
-
-/* Empty cart */
-
 .empty-cart {
-    color: #777777;
-
+    color: #77736c;
     text-align: center;
-
     padding: 25px 10px;
 }
 
-
-/* Cart item */
-
 .cart-item {
     display: flex;
-
     justify-content: space-between;
-
     align-items: center;
-
     gap: 20px;
-
     padding: 15px 0;
-
-    border-bottom: 1px solid #292929;
+    border-bottom: 1px solid #302c25;
 }
 
 .cart-item-name {
     font-weight: 700;
-
     margin-bottom: 5px;
 }
 
 .cart-item small {
-    color: #888888;
+    color: #88827a;
 }
 
 .cart-item-price {
-    color: #ff6a00;
-
+    color: #d4a64e;
     font-weight: 700;
-
     white-space: nowrap;
 }
 
@@ -636,21 +513,15 @@ section h2 {
 
 .cart-total {
     display: flex;
-
     justify-content: space-between;
-
     align-items: center;
-
     margin-top: 25px;
-
     padding-top: 5px;
-
     font-size: 20px;
 }
 
 .cart-total strong {
-    color: #ff6a00;
-
+    color: #d4a64e;
     font-size: 22px;
 }
 
@@ -659,52 +530,38 @@ section h2 {
 
 .place-order-btn {
     width: 100%;
-
     margin-top: 25px;
-
     padding: 16px;
-
     border: none;
-
-    background: #ff6a00;
-
-    color: #ffffff;
-
+    background: #d4a64e;
+    color: #15110a;
     font-size: 14px;
-
     font-weight: 800;
-
     letter-spacing: 1px;
-
     cursor: pointer;
-
     transition: 0.3s;
 }
 
 .place-order-btn:hover {
-    background: #ff8533;
-
+    background: #e6bc69;
     transform: translateY(-2px);
 }
 
 
-/* ================================================= */
-/* ================= CHECKOUT ====================== */
-/* ================================================= */
+/* ================= CHECKOUT ================= */
 
 .checkout-section {
     padding: 130px 7%;
-
     text-align: center;
 
     background:
         linear-gradient(
-            rgba(0, 0, 0, 0.85),
+            rgba(0, 0, 0, 0.87),
             rgba(0, 0, 0, 0.96)
         ),
         radial-gradient(
             circle at center,
-            #4a1d00,
+            #352714,
             #080808 65%
         );
 }
@@ -714,293 +571,173 @@ section h2 {
 }
 
 .checkout-description {
-    color: #aaaaaa;
-
+    color: #aaa49b;
     font-size: 17px;
-
     line-height: 1.7;
-
     max-width: 600px;
-
     margin: 0 auto 45px;
 }
 
-
-/* ================= CHECKOUT CONTAINER ================= */
-
 .checkout-container {
     width: 100%;
-
     max-width: 650px;
-
     margin: 0 auto;
-
     display: flex;
-
     justify-content: center;
 }
 
-
-/* ================= CHECKOUT BOX ================= */
-
 .checkout-box {
     width: 100%;
-
     padding: 40px;
-
-    background: #151515;
-
-    border: 1px solid #292929;
-
+    background: #151513;
+    border: 1px solid #302c25;
     border-radius: 12px;
-
     text-align: left;
-
-    box-shadow:
-        0 20px 60px rgba(0, 0, 0, 0.45);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
 }
 
-
-/* ================= CHECKOUT TITLE ================= */
-
 .checkout-box h3 {
-    color: #ffffff;
-
+    color: #f5f2ed;
     font-size: 24px;
-
     margin-bottom: 30px;
-
     letter-spacing: 1px;
 }
 
-
-/* ================= FORM GROUP ================= */
-
 .form-group {
     width: 100%;
-
     margin-bottom: 22px;
 }
 
-
-/* ================= LABEL ================= */
-
 .form-group label {
     display: block;
-
-    color: #ffffff;
-
+    color: #eee8de;
     font-size: 14px;
-
     font-weight: 700;
-
     margin-bottom: 9px;
-
-    letter-spacing: 0.5px;
 }
-
-
-/* ================= INPUTS ================= */
 
 .form-group input,
 .form-group textarea {
     width: 100%;
-
     display: block;
-
     padding: 15px 16px;
-
     background: #0b0b0b;
-
-    color: #ffffff;
-
-    border: 1px solid #333333;
-
+    color: #f5f2ed;
+    border: 1px solid #36322b;
     border-radius: 8px;
-
     outline: none;
-
     font-family: Arial, Helvetica, sans-serif;
-
     font-size: 15px;
-
     transition: 0.3s;
-
-    box-sizing: border-box;
 }
-
-
-/* ================= INPUT FOCUS ================= */
 
 .form-group input:focus,
 .form-group textarea:focus {
-    border-color: #ff6a00;
-
-    box-shadow:
-        0 0 0 2px rgba(255, 106, 0, 0.12);
+    border-color: #d4a64e;
+    box-shadow: 0 0 0 2px rgba(212, 166, 78, 0.12);
 }
-
-
-/* ================= PLACEHOLDER ================= */
 
 .form-group input::placeholder,
 .form-group textarea::placeholder {
-    color: #666666;
+    color: #66615a;
 }
-
-
-/* ================= ADDRESS ================= */
 
 .form-group textarea {
     min-height: 120px;
-
     resize: vertical;
 }
-
-
-/* ================= ORDER TYPE ================= */
 
 .delivery-type {
     margin-top: 28px;
 }
 
 .delivery-type > p {
-    color: #ffffff;
-
+    color: #eee8de;
     font-size: 14px;
-
     font-weight: 700;
-
     margin-bottom: 12px;
 }
 
-
-/* ================= DELIVERY OPTIONS ================= */
-
 .delivery-options {
     display: grid;
-
     grid-template-columns: 1fr 1fr;
-
     gap: 12px;
 }
 
-
-/* ================= DELIVERY OPTION ================= */
-
 .delivery-option {
     display: flex;
-
     align-items: center;
-
     gap: 10px;
-
     padding: 15px;
-
     background: #0b0b0b;
-
-    border: 1px solid #333333;
-
+    border: 1px solid #36322b;
     border-radius: 8px;
-
-    color: #ffffff;
-
+    color: #eee8de;
     cursor: pointer;
-
     transition: 0.3s;
 }
 
 .delivery-option:hover {
-    border-color: #ff6a00;
-
-    background: #151515;
+    border-color: #d4a64e;
+    background: #151513;
 }
 
 .delivery-option input {
     width: 17px;
-
     height: 17px;
-
-    accent-color: #ff6a00;
-
+    accent-color: #d4a64e;
     cursor: pointer;
 }
 
 .delivery-option span {
     font-size: 14px;
-
     font-weight: 600;
 }
 
-
-/* ================= PAYMENT BUTTON ================= */
-
 .continue-payment-btn {
     width: 100%;
-
     margin-top: 30px;
-
     padding: 16px 20px;
-
     border: none;
-
     border-radius: 8px;
-
-    background: #ff6a00;
-
-    color: #ffffff;
-
+    background: #d4a64e;
+    color: #15110a;
     font-size: 14px;
-
     font-weight: 800;
-
     letter-spacing: 1px;
-
     cursor: pointer;
-
     transition: 0.3s;
 }
 
 .continue-payment-btn:hover {
-    background: #ff8533;
-
+    background: #e6bc69;
     transform: translateY(-2px);
-
-    box-shadow:
-        0 10px 25px rgba(255, 106, 0, 0.2);
 }
 
 
-/* ================================================= */
 /* ================= CONTACT ================= */
-/* ================================================= */
 
 .contact-section {
     padding: 130px 7%;
-
     text-align: center;
 
     background:
         linear-gradient(
-            rgba(0, 0, 0, 0.8),
+            rgba(0, 0, 0, 0.82),
             rgba(0, 0, 0, 0.95)
         ),
         radial-gradient(
             circle,
-            #4a1d00,
+            #352714,
             #080808 65%
         );
 }
 
 .contact-section > p:not(.section-small-title) {
-    color: #aaaaaa;
-
+    color: #aaa49b;
     font-size: 17px;
-
     line-height: 1.7;
-
     max-width: 600px;
-
     margin: 0 auto;
 }
 
@@ -1009,24 +746,18 @@ section h2 {
 
 footer {
     padding: 30px;
-
     text-align: center;
-
     background: #050505;
-
-    color: #666666;
-
+    color: #68635d;
     font-size: 13px;
 }
 
 
-/* ================= SCROLL ANIMATION ================= */
+/* ================= SCROLL ================= */
 
 section.hidden {
     opacity: 0;
-
     transform: translateY(40px);
-
     transition:
         opacity 0.8s ease,
         transform 0.8s ease;
@@ -1034,14 +765,11 @@ section.hidden {
 
 section.show {
     opacity: 1;
-
     transform: translateY(0);
 }
 
 
-/* ================================================= */
 /* ================= TABLET ================= */
-/* ================================================= */
 
 @media (max-width: 900px) {
 
@@ -1056,13 +784,9 @@ section.show {
 }
 
 
-/* ================================================= */
 /* ================= MOBILE ================= */
-/* ================================================= */
 
 @media (max-width: 768px) {
-
-    /* NAVBAR */
 
     .navbar {
         padding: 18px 5%;
@@ -1080,9 +804,6 @@ section.show {
         font-size: 11px;
     }
 
-
-    /* HERO */
-
     .hero {
         padding-left: 15px;
         padding-right: 15px;
@@ -1096,18 +817,11 @@ section.show {
         font-size: 16px;
     }
 
-
-    /* HERO LOGO */
-
     .hero-logo {
         width: 140px;
         height: 140px;
-
         margin-bottom: 20px;
     }
-
-
-    /* MENU */
 
     .menu-grid {
         grid-template-columns: 1fr;
@@ -1115,22 +829,16 @@ section.show {
 
     .menu-image-container {
         width: 100%;
-
         padding: 0 5px;
     }
 
     .menu-image {
         width: 100%;
-
         max-width: 100%;
     }
 
-
-    /* GALLERY */
-
     .gallery-grid {
         grid-template-columns: repeat(2, 1fr);
-
         gap: 10px;
     }
 
@@ -1138,15 +846,9 @@ section.show {
         height: 160px;
     }
 
-
-    /* HEADINGS */
-
     section h2 {
         margin-bottom: 40px;
     }
-
-
-    /* ABOUT */
 
     .about-section {
         min-height: 500px;
@@ -1156,22 +858,17 @@ section.show {
         font-size: 16px;
     }
 
-
-    /* ================= ORDER ================= */
-
     .order-section {
         padding: 100px 5%;
     }
 
     .order-description {
         font-size: 15px;
-
         margin-top: -15px;
     }
 
     .order-container {
         grid-template-columns: 1fr;
-
         gap: 18px;
     }
 
@@ -1191,23 +888,15 @@ section.show {
         padding: 11px 22px;
     }
 
-
-    /* CART */
-
     .cart-box {
         width: 100%;
-
         margin-top: 40px;
-
         padding: 22px;
     }
 
     .cart-item {
         gap: 10px;
     }
-
-
-    /* ================= CHECKOUT ================= */
 
     .checkout-section {
         padding: 100px 5%;
@@ -1219,39 +908,31 @@ section.show {
 
     .checkout-description {
         font-size: 15px;
-
         margin-bottom: 35px;
     }
 
     .checkout-box {
         padding: 28px 22px;
-
         border-radius: 10px;
     }
 
     .checkout-box h3 {
         font-size: 21px;
-
         margin-bottom: 25px;
     }
 
     .form-group input,
     .form-group textarea {
         font-size: 15px;
-
         padding: 14px;
     }
 
 }
 
 
-/* ================================================= */
 /* ================= SMALL MOBILE ================= */
-/* ================================================= */
 
 @media (max-width: 480px) {
-
-    /* NAVBAR */
 
     .navbar {
         padding: 15px 4%;
@@ -1269,9 +950,6 @@ section.show {
         font-size: 9px;
     }
 
-
-    /* HERO */
-
     .hero h1 {
         font-size: 55px;
     }
@@ -1280,23 +958,14 @@ section.show {
         font-size: 14px;
     }
 
-
-    /* LOGO */
-
     .hero-logo {
         width: 120px;
         height: 120px;
     }
 
-
-    /* BUTTON */
-
     .btn {
         padding: 13px 22px;
     }
-
-
-    /* GALLERY */
 
     .gallery-grid {
         gap: 8px;
@@ -1305,9 +974,6 @@ section.show {
     .gallery-box {
         height: 135px;
     }
-
-
-    /* ================= ORDER ================= */
 
     .order-section {
         padding: 90px 5%;
@@ -1333,9 +999,6 @@ section.show {
         padding: 10px 18px;
     }
 
-
-    /* CART */
-
     .cart-box {
         padding: 18px;
     }
@@ -1351,9 +1014,6 @@ section.show {
     .cart-total strong {
         font-size: 20px;
     }
-
-
-    /* ================= CHECKOUT ================= */
 
     .checkout-section {
         padding: 85px 5%;
@@ -1381,9 +1041,7 @@ section.show {
 
     .continue-payment-btn {
         padding: 15px;
-
         font-size: 13px;
     }
 
 }
-
