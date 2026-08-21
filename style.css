@@ -1197,3 +1197,10 @@ section.show {
     }
 
 }
+.checkout-section {
+    background: red !important;
+}
+
+.checkout-box {
+    background: blue !important;
+}
