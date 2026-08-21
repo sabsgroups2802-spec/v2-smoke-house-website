@@ -1,604 +1,1069 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>V2 Smoke House</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header class="navbar">
-    <div class="logo">V2 SMOKE HOUSE</div>
+    <!-- ================= NAVBAR ================= -->
 
-    <nav>
-        <a href="#home">HOME</a>
-        <a href="#menu">MENU</a>
-        <a href="#about">ABOUT</a>
-        <a href="#gallery">GALLERY</a>
-        <a href="#order">ORDER</a>
-        <a href="#contact">CONTACT</a>
-    </nav>
-</header>
+    <header class="navbar">
 
-<section class="hero" id="home">
-    <div class="hero-content">
-
-        <img
-            src="image/logo.jpg"
-            class="hero-logo"
-            alt="V2 Smoke House Logo"
-        >
-
-        <p class="small-title">WELCOME TO</p>
-
-        <h1>
-            V2<br>
-            <span>SMOKE HOUSE</span>
-        </h1>
-
-        <p class="tagline">
-            Slow Smoked. Bold Flavours.
-        </p>
-
-        <div class="hero-buttons">
-            <a href="#menu" class="btn primary-btn">VIEW MENU</a>
-            <a href="#order" class="btn secondary-btn">ORDER NOW</a>
+        <div class="logo">
+            V2 SMOKE HOUSE
         </div>
 
-    </div>
-</section>
+        <nav>
+            <a href="#home">HOME</a>
+            <a href="#menu">MENU</a>
+            <a href="#about">ABOUT</a>
+            <a href="#gallery">GALLERY</a>
+            <a href="#order">ORDER</a>
+            <a href="#contact">CONTACT</a>
+        </nav>
 
-<section class="menu-section" id="menu">
+    </header>
 
-    <p class="section-small-title">OUR MENU</p>
 
-    <h2>
-        SMOKED <span>FLAVOURS</span>
-    </h2>
+    <!-- ================= HERO ================= -->
 
-    <div class="menu-image-container">
-        <img
-            src="image/menu.jpg"
-            class="menu-image"
-            alt="V2 Smoke House Menu"
-        >
-    </div>
+    <section class="hero" id="home">
 
-</section>
+        <div class="hero-content">
 
-<section class="about-section" id="about">
+            <img
+                src="image/logo.jpg"
+                class="hero-logo"
+                alt="V2 Smoke House Logo"
+            >
 
-    <div class="about-content">
+            <p class="small-title">
+                WELCOME TO
+            </p>
 
-        <p class="section-small-title">ABOUT US</p>
+            <h1>
+                V2<br>
+                <span>SMOKE HOUSE</span>
+            </h1>
+
+            <p class="tagline">
+                Slow Smoked. Bold Flavours.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#menu" class="btn primary-btn">
+                    VIEW MENU
+                </a>
+
+                <a href="#order" class="btn secondary-btn">
+                    ORDER NOW
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= MENU ================= -->
+
+    <section class="menu-section" id="menu">
+
+        <p class="section-small-title">
+            OUR MENU
+        </p>
 
         <h2>
-            THE ART OF<br>
-            <span>SMOKING</span>
+            SMOKED <span>FLAVOURS</span>
+        </h2>
+
+        <div class="menu-image-container">
+
+            <img
+                src="image/menu.jpg"
+                class="menu-image"
+                alt="V2 Smoke House Menu"
+            >
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section class="about-section" id="about">
+
+        <div class="about-content">
+
+            <p class="section-small-title">
+                ABOUT US
+            </p>
+
+            <h2>
+                THE ART OF<br>
+                <span>SMOKING</span>
+            </h2>
+
+            <p>
+                At V2 Smoke House, we believe great food takes time.
+                We prepare our food with bold flavours, quality
+                ingredients and a passion for creating an unforgettable
+                smoke house experience.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOD GALLERY ================= -->
+
+    <section class="gallery-section" id="gallery">
+
+        <p class="section-small-title">
+            FOOD GALLERY
+        </p>
+
+        <h2>
+            SEE THE <span>FLAVOUR</span>
+        </h2>
+
+
+
+    </section>
+
+
+    <!-- ================= ORDER ================= -->
+
+    <section class="order-section" id="order">
+
+        <p class="section-small-title">
+            ORDER YOUR FAVOURITE
+        </p>
+
+        <h2>
+            ORDER <span>NOW</span>
+        </h2>
+
+        <p class="order-description">
+            Choose your favourite food and add it to your order.
+        </p>
+
+
+        <div class="menu-order-layout">
+
+
+            <!-- ================= BIRYANI ================= -->
+
+            <div class="food-category">
+
+                <h3>BIRYANI</h3>
+
+                <div class="food-item">
+                    <span>Chicken Biriyani - Leg Piece &amp; Egg</span>
+                    <strong>₹130</strong>
+
+                    <button
+                        class="add-btn"
+                        type="button"
+                        data-name="Chicken Biriyani - Leg Piece & Egg"
+                        data-price="130">
+                        ADD
+                    </button>
+                </div>
+
+                <div class="food-item">
+                    <span>Chicken 65 Biriyani</span>
+                    <strong>₹140</strong>
+
+                    <button
+                        class="add-btn"
+                        type="button"
+                        data-name="Chicken 65 Biriyani"
+                        data-price="140">
+                        ADD
+                    </button>
+                </div>
+
+                <div class="food-item">
+                    <span>Egg Biriyani</span>
+                    <strong>₹100</strong>
+
+                    <button
+                        class="add-btn"
+                        type="button"
+                        data-name="Egg Biriyani"
+                        data-price="100">
+                        ADD
+                    </button>
+                </div>
+
+                <div class="food-item">
+                    <span>Plain Biriyani</span>
+                    <strong>₹90</strong>
+
+                    <button
+                        class="add-btn"
+                        type="button"
+                        data-name="Plain Biriyani"
+                        data-price="90">
+                        ADD
+                    </button>
+                </div>
+
+            </div>
+
+
+            <!-- ================= STARTERS ================= -->
+
+            <div class="food-category">
+
+                <h3>STARTERS</h3>
+
+                <div class="food-item">
+                    <span>Chicken Lollipop</span>
+                    <strong>₹130</strong>
+
+                    <button
+                        class="add-btn"
+                        type="button"
+                        data-name="Chicken Lollipop"
+                        data-price="130">
+                        ADD
+                    </button>
+                </div>
+
+                <div class="food-item">
+                    <span>Chicken 65 Boneless</span>
+                    <strong>₹110</strong>
+
+                    <button
+                        class="add-btn"
+                        type="button"
+                        data-name="Chicken 65 Boneless"
+                        data-price="110">
+                        ADD
+                    </button>
+                </div>
+
+                <div class="food-item">
+                    <span>Chicken Nuggets</span>
+                    <strong>₹130</strong>
+
+                    <button
+                        class="add-btn"
+                        type="button"
+                        data-name="Chicken Nuggets"
+                        data-price="130">
+                        ADD
+                    </button>
+                </div>
+
+                <div class="food-item">
+                    <span>Chicken Bits</span>
+                    <strong>₹130</strong>
+
+                    <button
+                        class="add-btn"
+                        type="button"
+                        data-name="Chicken Bits"
+                        data-price="130">
+                        ADD
+                    </button>
+                </div>
+
+                <div class="food-item">
+                    <span>Fish Fingers</span>
+                    <strong>₹160</strong>
+
+                    <button
+                        class="add-btn"
+                        type="button"
+                        data-name="Fish Fingers"
+                        data-price="160">
+                        ADD
+                    </button>
+                </div>
+
+            </div>
+
+
+            <!-- ================= MOMOS & FRIES ================= -->
+
+            <div class="food-category">
+
+                <h3>MOMOS &amp; FRENCH FRIES</h3>
+
+                <div class="food-item">
+                    <span>French Fries</span>
+                    <strong>₹70 / ₹150 / ₹210</strong>
+
+                    <button
+                        class="add-btn"
+                        type="button"
+                        data-name="French Fries"
+                        data-price="70">
+                        ADD
+                    </button>
+                </div>
+
+                <div class="food-item">
+                    <span>French Fries Peri Peri</span>
+                    <strong>₹80 / ₹160 / ₹210</strong>
+
+                    <button
+                        class="add-btn"
+                        type="button"
+                        data-name="French Fries Peri Peri"
+                        data-price="80">
+                        ADD
+                    </button>
+                </div>
+
+                <div class="food-item">
+                    <span>Fried Veg Momos</span>
+                    <strong>₹90</strong>
+
+                    <button
+                        class="add-btn"
+                        type="button"
+                        data-name="Fried Veg Momos"
+                        data-price="90">
+                        ADD
+                    </button>
+                </div>
+
+                <div class="food-item">
+                    <span>Fried Corn Momos</span>
+                    <strong>₹110</strong>
+
+                    <button
+                        class="add-btn"
+                        type="button"
+                        data-name="Fried Corn Momos"
+                        data-price="110">
+                        ADD
+                    </button>
+                </div>
+
+                <div class="food-item">
+                    <span>Veg Cutlets</span>
+                    <strong>₹35 / ₹50 / ₹70</strong>
+
+                    <button
+                        class="add-btn"
+                        type="button"
+                        data-name="Veg Cutlets"
+                        data-price="35">
+                        ADD
+                    </button>
+                </div>
+
+                <div class="food-item">
+                    <span>Fried Chicken Momos</span>
+                    <strong>₹110</strong>
+
+                    <button
+                        class="add-btn"
+                        type="button"
+                        data-name="Fried Chicken Momos"
+                        data-price="110">
+                        ADD
+                    </button>
+                </div>
+
+            </div>
+
+
+            <!-- ================= CHEESE SHAWARMA ================= -->
+
+            <div class="food-category">
+
+                <h3>🔥 CHEESE SHAWARMA</h3>
+
+                <div class="food-item">
+                    <span>Roll</span>
+                    <strong>₹120</strong>
+
+                    <button
+                        class="add-btn"
+                        type="button"
+                        data-name="Cheese Shawarma Roll"
+                        data-price="120">
+                        ADD
+                    </button>
+                </div>
+
+                <div class="food-item">
+                    <span>Plate</span>
+                    <strong>₹150</strong>
+
+                    <button
+                        class="add-btn"
+                        type="button"
+                        data-name="Cheese Shawarma Plate"
+                        data-price="150">
+                        ADD
+                    </button>
+                </div>
+
+            </div>
+
+
+            <!-- ================= LAYS SHAWARMA ================= -->
+
+            <div class="food-category">
+
+                <h3>🔥 LAYS SHAWARMA</h3>
+
+                <div class="food-item">
+                    <span>Pocket</span>
+                    <strong>₹110</strong>
+
+                    <button
+                        class="add-btn"
+                        type="button"
+                        data-name="Lays Shawarma Pocket"
+                        data-price="110">
+                        ADD
+                    </button>
+                </div>
+
+                <div class="food-item">
+                    <span>Bowl</span>
+                    <strong>₹150</strong>
+
+                    <button
+                        class="add-btn"
+                        type="button"
+                        data-name="Lays Shawarma Bowl"
+                        data-price="150">
+                        ADD
+                    </button>
+                </div>
+
+            </div>
+
+
+            <!-- ================= MEXICAN SHAWARMA ================= -->
+
+            <div class="food-category">
+
+                <h3>🔥 MEXICAN SHAWARMA</h3>
+
+                <div class="food-item">
+                    <span>Roll</span>
+                    <strong>₹110</strong>
+
+                    <button
+                        class="add-btn"
+                        type="button"
+                        data-name="Mexican Shawarma Roll"
+                        data-price="110">
+                        ADD
+                    </button>
+                </div>
+
+                <div class="food-item">
+                    <span>Plate</span>
+                    <strong>₹150</strong>
+
+                    <button
+                        class="add-btn"
+                        type="button"
+                        data-name="Mexican Shawarma Plate"
+                        data-price="150">
+                        ADD
+                    </button>
+                </div>
+
+            </div>
+
+
+            <!-- ================= PERI PERI SHAWARMA ================= -->
+
+            <div class="food-category">
+
+                <h3>🔥 PERI PERI SHAWARMA</h3>
+
+                <div class="food-item">
+                    <span>Roll</span>
+                    <strong>₹110</strong>
+
+                    <button
+                        class="add-btn"
+                        type="button"
+                        data-name="Peri Peri Shawarma Roll"
+                        data-price="110">
+                        ADD
+                    </button>
+                </div>
+
+                <div class="food-item">
+                    <span>Plate</span>
+                    <strong>₹150</strong>
+
+                    <button
+                        class="add-btn"
+                        type="button"
+                        data-name="Peri Peri Shawarma Plate"
+                        data-price="150">
+                        ADD
+                    </button>
+                </div>
+
+            </div>
+
+
+            <!-- ================= SPECIAL MEAT SHAWARMA ================= -->
+
+            <div class="food-category">
+
+                <h3>🔥 V2 SPECIAL MEAT SHAWARMA</h3>
+
+                <div class="food-item">
+                    <span>Roll</span>
+                    <strong>₹140</strong>
+
+                    <button
+                        class="add-btn"
+                        type="button"
+                        data-name="V2 Special Meat Shawarma Roll"
+                        data-price="140">
+                        ADD
+                    </button>
+                </div>
+
+                <div class="food-item">
+                    <span>Plate</span>
+                    <strong>₹170</strong>
+
+                    <button
+                        class="add-btn"
+                        type="button"
+                        data-name="V2 Special Meat Shawarma Plate"
+                        data-price="170">
+                        ADD
+                    </button>
+                </div>
+
+            </div>
+
+
+            <!-- ================= PREMIUM SHAWARMA ================= -->
+
+            <div class="food-category">
+
+                <h3>👑 V2 PREMIUM SPECIAL SHAWARMA</h3>
+
+                <div class="food-item">
+                    <span>Roll</span>
+                    <strong>₹150</strong>
+
+                    <button
+                        class="add-btn"
+                        type="button"
+                        data-name="V2 Premium Special Shawarma Roll"
+                        data-price="150">
+                        ADD
+                    </button>
+                </div>
+
+                <div class="food-item">
+                    <span>Plate</span>
+                    <strong>₹180</strong>
+
+                    <button
+                        class="add-btn"
+                        type="button"
+                        data-name="V2 Premium Special Shawarma Plate"
+                        data-price="180">
+                        ADD
+                    </button>
+                </div>
+
+            </div>
+
+
+            <!-- ================= CLASSIC SHAWARMA ================= -->
+
+            <div class="food-category">
+
+                <h3>CLASSIC SHAWARMA</h3>
+
+                <div class="food-item">
+                    <span>Buy 1</span>
+                    <strong>₹90</strong>
+
+                    <button
+                        class="add-btn"
+                        type="button"
+                        data-name="Classic Shawarma Buy 1"
+                        data-price="90">
+                        ADD
+                    </button>
+                </div>
+
+                <div class="food-item">
+                    <span>Buy 2</span>
+                    <strong>₹160</strong>
+
+                    <button
+                        class="add-btn"
+                        type="button"
+                        data-name="Classic Shawarma Buy 2"
+                        data-price="160">
+                        ADD
+                    </button>
+                </div>
+
+                <div class="food-item">
+                    <span>Buy 3</span>
+                    <strong>₹220</strong>
+
+                    <button
+                        class="add-btn"
+                        type="button"
+                        data-name="Classic Shawarma Buy 3"
+                        data-price="220">
+                        ADD
+                    </button>
+                </div>
+
+            </div>
+
+
+            <!-- ================= CLASSIC SPICY SHAWARMA ================= -->
+
+            <div class="food-category">
+
+                <h3>🌶️ CLASSIC SPICY SHAWARMA</h3>
+
+                <div class="food-item">
+                    <span>Buy 1</span>
+                    <strong>₹110</strong>
+
+                    <button
+                        class="add-btn"
+                        type="button"
+                        data-name="Classic Spicy Shawarma Buy 1"
+                        data-price="110">
+                        ADD
+                    </button>
+                </div>
+
+                <div class="food-item">
+                    <span>Buy 2</span>
+                    <strong>₹190</strong>
+
+                    <button
+                        class="add-btn"
+                        type="button"
+                        data-name="Classic Spicy Shawarma Buy 2"
+                        data-price="190">
+                        ADD
+                    </button>
+                </div>
+
+                <div class="food-item">
+                    <span>Buy 3</span>
+                    <strong>₹280</strong>
+
+                    <button
+                        class="add-btn"
+                        type="button"
+                        data-name="Classic Spicy Shawarma Buy 3"
+                        data-price="280">
+                        ADD
+                    </button>
+                </div>
+
+            </div>
+
+
+            <!-- ================= SHAWARMA PLATE ================= -->
+
+            <div class="food-category">
+
+                <h3>CLASSIC SHAWARMA PLATE</h3>
+
+                <div class="food-item">
+                    <span>Buy 1</span>
+                    <strong>₹140</strong>
+
+                    <button
+                        class="add-btn"
+                        type="button"
+                        data-name="Classic Shawarma Plate Buy 1"
+                        data-price="140">
+                        ADD
+                    </button>
+                </div>
+
+                <div class="food-item">
+                    <span>Buy 2</span>
+                    <strong>₹250</strong>
+
+                    <button
+                        class="add-btn"
+                        type="button"
+                        data-name="Classic Shawarma Plate Buy 2"
+                        data-price="250">
+                        ADD
+                    </button>
+                </div>
+
+            </div>
+
+
+            <!-- ================= ADD ON ================= -->
+
+            <div class="food-category">
+
+                <h3>ADD-ON</h3>
+
+                <div class="food-item">
+                    <span>Extra Cheese</span>
+                    <strong>₹30</strong>
+
+                    <button
+                        class="add-btn"
+                        type="button"
+                        data-name="Extra Cheese"
+                        data-price="30">
+                        ADD
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= CART ================= -->
+
+        <div class="cart-box">
+
+            <h3>YOUR ORDER</h3>
+
+            <div id="cartItems">
+
+                <div class="empty-cart">
+                    Your cart is empty.
+                </div>
+
+            </div>
+
+            <div class="cart-total">
+
+                <span>TOTAL</span>
+
+                <strong id="cartTotal">
+                    ₹ 0
+                </strong>
+
+            </div>
+
+            <button
+                class="place-order-btn"
+                type="button"
+                id="placeOrderBtn"
+            >
+                PLACE ORDER
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CUSTOMER DETAILS ================= -->
+
+    <section class="checkout-section" id="checkout">
+
+        <p class="section-small-title">
+            CHECKOUT
+        </p>
+
+        <h2>
+            YOUR <span>DETAILS</span>
+        </h2>
+
+        <p class="checkout-description">
+            Enter your details before making the payment.
+        </p>
+
+        <div class="checkout-container">
+
+            <div class="checkout-box">
+
+                <h3>
+                    Customer Information
+                </h3>
+
+                <div class="form-group">
+
+                    <label for="customerName">
+                        Full Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="customerName"
+                        placeholder="Enter your full name"
+                    >
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="customerPhone">
+                        Phone Number
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="customerPhone"
+                        placeholder="Enter your phone number"
+                        maxlength="10"
+                    >
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="customerAddress">
+                        Delivery Address
+                    </label>
+
+                    <textarea
+                        id="customerAddress"
+                        placeholder="Enter your complete delivery address"
+                    ></textarea>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="customerLocation">
+                        Location
+                    </label>
+
+                    <input
+                        type="text"
+                        id="customerLocation"
+                        placeholder="Enter your area / location"
+                    >
+
+                </div>
+
+                <div class="delivery-type">
+
+                    <p>Order Type</p>
+
+                    <div class="delivery-options">
+
+                        <label class="delivery-option">
+
+                            <input
+                                type="radio"
+                                name="orderType"
+                                value="delivery"
+                                checked
+                            >
+
+                            <span>
+                                🚚 Delivery
+                            </span>
+
+                        </label>
+
+                        <label class="delivery-option">
+
+                            <input
+                                type="radio"
+                                name="orderType"
+                                value="pickup"
+                            >
+
+                            <span>
+                                🛍️ Pickup
+                            </span>
+
+                        </label>
+
+                    </div>
+
+                </div>
+
+                <button
+                    type="button"
+                    class="continue-payment-btn"
+                    id="continuePaymentBtn"
+                >
+                    CONTINUE TO PAYMENT →
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= UPI PAYMENT ================= -->
+
+    <section class="checkout-section" id="payment">
+
+        <p class="section-small-title">
+            SECURE PAYMENT
+        </p>
+
+        <h2>
+            UPI <span>PAYMENT</span>
+        </h2>
+
+        <p class="checkout-description">
+            Scan the QR code using any UPI application and complete your payment.
+        </p>
+
+        <div class="checkout-container">
+
+            <div class="checkout-box upi-payment-box">
+
+                <h3>
+                    V2 Smoke House
+                </h3>
+
+                <div class="qr-container">
+
+                    <img
+                        id="upiQr"
+                        src=""
+                        alt="V2 Smoke House UPI QR Code"
+                    >
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>
+                        UPI ID
+                    </label>
+
+                    <input
+                        type="text"
+                        value="9360884209@indianbk"
+                        readonly
+                    >
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>
+                        Order Amount
+                    </label>
+
+                    <input
+                        type="text"
+                        id="paymentAmount"
+                        value="₹ 0"
+                        readonly
+                    >
+
+                </div>
+
+                <p class="payment-note">
+                    Scan the QR code and pay the exact order amount.
+                </p>
+
+                <a
+                    href="#"
+                    id="upiPayBtn"
+                    class="continue-payment-btn"
+                >
+                    OPEN UPI APP
+                </a>
+
+                <button
+                    type="button"
+                    class="continue-payment-btn"
+                    id="paymentDoneBtn"
+                >
+                    I HAVE PAID ✓
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+
+    <section class="contact-section" id="contact">
+
+        <p class="section-small-title">
+            COME FIND US
+        </p>
+
+        <h2>
+            READY TO <span>SMOKE?</span>
         </h2>
 
         <p>
-            At V2 Smoke House, we believe great food takes time.
-            We prepare our food with bold flavours, quality
-            ingredients and a passion for creating an unforgettable
-            smoke house experience.
+            Follow V2 Smoke House for the latest updates,
+            location and delicious smoky food.
         </p>
 
-    </div>
-
-</section>
-
-<section class="gallery-section" id="gallery">
-
-    <p class="section-small-title">FOOD GALLERY</p>
-
-    <h2>
-        SEE THE <span>FLAVOUR</span>
-    </h2>
-
-    <div class="gallery-grid">
-
-        <div class="gallery-box">
-            <img src="image/food1.jpg" alt="Regular Shawarma">
-        </div>
-
-        <div class="gallery-box">
-            <img src="image/food2.jpg" alt="Spicy Shawarma">
-        </div>
-
-        <div class="gallery-box">
-            <img src="image/food3.jpg" alt="Spicy Plate Shawarma">
-        </div>
-
-        <div class="gallery-box">
-            <img src="image/food4.jpg" alt="Chicken Lolipop">
-        </div>
-
-        <div class="gallery-box">
-            <img src="image/food5.jpg" alt="Boneless Chicken 65">
-        </div>
-
-        <div class="gallery-box">
-            <img src="image/food6.jpg" alt="Boneless Chicken Biriyani">
-        </div>
-
-        <div class="gallery-box">
-            <img src="image/food7.jpg" alt="Leg Piece Biriyani">
-        </div>
-
-        <div class="gallery-box">
-            <img src="image/food8.jpg" alt="Egg Chicken Biriyani">
-        </div>
-
-    </div>
-
-</section>
-
-<section class="order-section" id="order">
-
-    <p class="section-small-title">
-        ORDER YOUR FAVOURITE
-    </p>
-
-    <h2>
-        ORDER <span>NOW</span>
-    </h2>
-
-    <p class="order-description">
-        Choose your favourite food and add it to your order.
-    </p>
-
-    <div class="order-container">
-
-        <div class="order-card">
-            <div class="order-food-image">
-                <img src="image/food1.jpg" alt="Regular Shawarma">
-            </div>
-
-            <div class="order-card-content">
-                <h3>Regular Shawarma</h3>
-                <p>Delicious regular chicken shawarma.</p>
-
-                <div class="order-bottom">
-                    <strong>₹ 80</strong>
-
-                    <button
-                        class="add-btn"
-                        type="button"
-                        data-name="Regular Shawarma"
-                        data-price="80"
-                    >
-                        ADD
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <div class="order-card">
-            <div class="order-food-image">
-                <img src="image/food2.jpg" alt="Spicy Shawarma">
-            </div>
-
-            <div class="order-card-content">
-                <h3>Spicy Shawarma</h3>
-                <p>Spicy and flavourful chicken shawarma.</p>
-
-                <div class="order-bottom">
-                    <strong>₹ 100</strong>
-
-                    <button
-                        class="add-btn"
-                        type="button"
-                        data-name="Spicy Shawarma"
-                        data-price="100"
-                    >
-                        ADD
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <div class="order-card">
-            <div class="order-food-image">
-                <img src="image/food3.jpg" alt="Spicy Plate Shawarma">
-            </div>
-
-            <div class="order-card-content">
-                <h3>Spicy Plate Shawarma</h3>
-                <p>Spicy shawarma served as a plate.</p>
-
-                <div class="order-bottom">
-                    <strong>₹ 130</strong>
-
-                    <button
-                        class="add-btn"
-                        type="button"
-                        data-name="Spicy Plate Shawarma"
-                        data-price="130"
-                    >
-                        ADD
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <div class="order-card">
-            <div class="order-food-image">
-                <img src="image/food4.jpg" alt="Chicken Lolipop">
-            </div>
-
-            <div class="order-card-content">
-                <h3>Chicken Lolipop</h3>
-                <p>Crispy and delicious chicken lolipop.</p>
-
-                <div class="order-bottom">
-                    <strong>₹ 130</strong>
-
-                    <button
-                        class="add-btn"
-                        type="button"
-                        data-name="Chicken Lolipop"
-                        data-price="130"
-                    >
-                        ADD
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <div class="order-card">
-            <div class="order-food-image">
-                <img src="image/food5.jpg" alt="Boneless Chicken 65">
-            </div>
-
-            <div class="order-card-content">
-                <h3>Boneless Chicken 65</h3>
-                <p>Crispy boneless chicken with bold flavours.</p>
-
-                <div class="order-bottom">
-                    <strong>₹ 110</strong>
-
-                    <button
-                        class="add-btn"
-                        type="button"
-                        data-name="Boneless Chicken 65"
-                        data-price="110"
-                    >
-                        ADD
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <div class="order-card">
-            <div class="order-food-image">
-                <img src="image/food6.jpg" alt="Boneless Chicken Biriyani">
-            </div>
-
-            <div class="order-card-content">
-                <h3>Boneless Chicken Biriyani</h3>
-                <p>Delicious biriyani with boneless chicken.</p>
-
-                <div class="order-bottom">
-                    <strong>₹ 110</strong>
-
-                    <button
-                        class="add-btn"
-                        type="button"
-                        data-name="Boneless Chicken Biriyani"
-                        data-price="110"
-                    >
-                        ADD
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <div class="order-card">
-            <div class="order-food-image">
-                <img src="image/food7.jpg" alt="Leg Piece Biriyani">
-            </div>
-
-            <div class="order-card-content">
-                <h3>Leg Piece Biriyani</h3>
-                <p>Flavourful biriyani with leg piece.</p>
-
-                <div class="order-bottom">
-                    <strong>₹ 130</strong>
-
-                    <button
-                        class="add-btn"
-                        type="button"
-                        data-name="Leg Piece Biriyani"
-                        data-price="130"
-                    >
-                        ADD
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <div class="order-card">
-            <div class="order-food-image">
-                <img src="image/food8.jpg" alt="Egg Chicken Biriyani">
-            </div>
-
-            <div class="order-card-content">
-                <h3>Egg Chicken Biriyani</h3>
-                <p>Chicken biriyani served with egg.</p>
-
-                <div class="order-bottom">
-                    <strong>₹ 100</strong>
-
-                    <button
-                        class="add-btn"
-                        type="button"
-                        data-name="Egg Chicken Biriyani"
-                        data-price="100"
-                    >
-                        ADD
-                    </button>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-    <div class="cart-box">
-
-        <h3>YOUR ORDER</h3>
-
-        <div id="cartItems">
-            <div class="empty-cart">
-                Your cart is empty.
-            </div>
-        </div>
-
-        <div class="cart-total">
-            <span>TOTAL</span>
-            <strong id="cartTotal">₹ 0</strong>
-        </div>
-
-        <button
-            class="place-order-btn"
-            type="button"
-            id="placeOrderBtn"
-        >
-            PLACE ORDER
-        </button>
-
-    </div>
-
-</section>
-
-<section class="checkout-section" id="checkout">
-
-    <p class="section-small-title">CHECKOUT</p>
-
-    <h2>
-        YOUR <span>DETAILS</span>
-    </h2>
-
-    <p class="checkout-description">
-        Enter your details to continue with your order.
-    </p>
-
-    <div class="checkout-container">
-
-        <div class="checkout-box">
-
-            <h3>Customer Information</h3>
-
-            <div class="form-group">
-                <label for="customerName">Full Name</label>
-
-                <input
-                    type="text"
-                    id="customerName"
-                    placeholder="Enter your full name"
-                >
-            </div>
-
-            <div class="form-group">
-                <label for="customerPhone">Phone Number</label>
-
-                <input
-                    type="tel"
-                    id="customerPhone"
-                    placeholder="Enter your phone number"
-                    maxlength="10"
-                >
-            </div>
-
-            <div class="form-group">
-                <label for="customerAddress">
-                    Delivery Address
-                </label>
-
-                <textarea
-                    id="customerAddress"
-                    placeholder="Enter your complete delivery address"
-                ></textarea>
-            </div>
-
-            <div class="form-group">
-                <label for="customerLocation">
-                    Location
-                </label>
-
-                <input
-                    type="text"
-                    id="customerLocation"
-                    placeholder="Enter your area / location"
-                >
-            </div>
-
-            <div class="delivery-type">
-
-                <p>Order Type</p>
-
-                <div class="delivery-options">
-
-                    <label class="delivery-option">
-
-                        <input
-                            type="radio"
-                            name="orderType"
-                            value="delivery"
-                            checked
-                        >
-
-                        <span>🚚 Delivery</span>
-
-                    </label>
-
-                    <label class="delivery-option">
-
-                        <input
-                            type="radio"
-                            name="orderType"
-                            value="pickup"
-                        >
-
-                        <span>🛍️ Pickup</span>
-
-                    </label>
-
-                </div>
-
-            </div>
-
-            <button
-                type="button"
-                class="continue-payment-btn"
-                id="continuePaymentBtn"
-            >
-                CONTINUE TO PAYMENT →
-            </button>
-
-        </div>
-
-    </div>
-
-</section>
-
-<section class="checkout-section" id="payment">
-
-    <p class="section-small-title">
-        SECURE PAYMENT
-    </p>
-
-    <h2>
-        UPI <span>PAYMENT</span>
-    </h2>
-
-    <p class="checkout-description">
-        Complete your payment using your preferred UPI app.
-    </p>
-
-    <div class="checkout-container">
-
-        <div class="checkout-box">
-
-            <h3>V2 Smoke House Payment</h3>
-
-            <div class="form-group">
-
-                <label>UPI ID</label>
-
-                <input
-                    type="text"
-                    value="9360884209@indianbk"
-                    readonly
-                >
-
-            </div>
-
-            <div class="form-group">
-
-                <label>Order Amount</label>
-
-                <input
-                    type="text"
-                    id="paymentAmount"
-                    value="₹ 0"
-                    readonly
-                >
-
-            </div>
-
-            <p style="color:#aaa49b; line-height:1.7; margin-bottom:20px;">
-                Pay the exact order amount to the UPI ID shown above.
-            </p>
+        <div class="contact-buttons">
 
             <a
-                href="upi://pay?pa=9360884209@indianbk&pn=V2%20Smoke%20House"
-                class="continue-payment-btn"
-                id="upiPayBtn"
+                href="#"
+                class="btn primary-btn"
             >
-                PAY USING UPI APP
+                INSTAGRAM
             </a>
 
-            <button
-                type="button"
-                class="continue-payment-btn"
-                id="paymentDoneBtn"
+            <a
+                href="https://wa.me/918760884209"
+                class="btn secondary-btn"
+                target="_blank"
+                rel="noopener noreferrer"
             >
-                I HAVE PAID ✓
-            </button>
+                WHATSAPP
+            </a>
 
         </div>
 
-    </div>
+    </section>
 
-</section>
 
-<section class="contact-section" id="contact">
+    <!-- ================= FOOTER ================= -->
 
-    <p class="section-small-title">
-        COME FIND US
-    </p>
+    <footer>
 
-    <h2>
-        READY TO <span>SMOKE?</span>
-    </h2>
+        <p>
+            © 2026 V2 Smoke House. All Rights Reserved.
+        </p>
 
-    <p>
-        Follow V2 Smoke House for the latest updates,
-        location and delicious smoky food.
-    </p>
+    </footer>
 
-    <div class="contact-buttons">
 
-        <a
-            href="#"
-            class="btn primary-btn"
-        >
-            INSTAGRAM
-        </a>
-
-        <a
-            href="https://wa.me/918760884209"
-            class="btn secondary-btn"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            WHATSAPP
-        </a>
-
-    </div>
-
-</section>
-
-<footer>
-    <p>
-        © 2026 V2 Smoke House. All Rights Reserved.
-    </p>
-</footer>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
+
 </html>
