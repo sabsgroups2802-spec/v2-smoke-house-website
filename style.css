@@ -8,12 +8,25 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 90px;
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background: #090909;
+    background: #080808;
     color: #f5f2ed;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+button,
+input,
+textarea {
+    font: inherit;
 }
 
 
@@ -21,41 +34,71 @@ body {
 
 .navbar {
     width: 100%;
-    padding: 22px 7%;
+    padding: 20px 7%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1000;
 
-    background: rgba(5, 5, 5, 0.92);
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(212, 166, 78, 0.15);
+    background: rgba(5, 5, 5, 0.95);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+
+    border-bottom: 1px solid rgba(212, 166, 78, 0.25);
 }
 
 .logo {
     font-size: 22px;
-    font-weight: 800;
+    font-weight: 900;
     letter-spacing: 2px;
     color: #f5f2ed;
+    white-space: nowrap;
 }
 
 .navbar nav {
     display: flex;
-    gap: 30px;
+    align-items: center;
+    gap: 28px;
 }
 
 .navbar nav a {
     color: #ddd6ca;
     text-decoration: none;
-    font-size: 14px;
-    font-weight: 600;
-    transition: 0.3s;
+    font-size: 13px;
+    font-weight: 700;
+    transition: 0.3s ease;
 }
 
 .navbar nav a:hover {
+    color: #d4a64e;
+}
+
+
+/* ================= COMMON ================= */
+
+.small-title,
+.section-small-title {
+    color: #d4a64e;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 4px;
+    margin-bottom: 18px;
+}
+
+section h2 {
+    font-size: clamp(40px, 6vw, 70px);
+    line-height: 1;
+    margin-bottom: 60px;
+    font-weight: 900;
+    color: #f5f2ed;
+}
+
+section h2 span,
+.hero h1 span {
     color: #d4a64e;
 }
 
@@ -64,49 +107,41 @@ body {
 
 .hero {
     min-height: 100vh;
+
     display: flex;
     align-items: center;
     justify-content: center;
+
     text-align: center;
+
     padding: 120px 20px 60px;
 
     background:
-        linear-gradient(
-            rgba(0, 0, 0, 0.68),
-            rgba(0, 0, 0, 0.92)
-        ),
         radial-gradient(
-            circle at center,
-            #352714,
-            #080808 65%
-        );
+            circle at 50% 42%,
+            rgba(212, 166, 78, 0.18),
+            transparent 30%
+        ),
+        linear-gradient(
+            rgba(0, 0, 0, 0.55),
+            rgba(0, 0, 0, 0.94)
+        ),
+        #080808;
 }
 
 .hero-content {
+    width: 100%;
     max-width: 900px;
 }
-
-
-/* ================= HERO LOGO ================= */
 
 .hero-logo {
     width: 180px;
     height: 180px;
+
     object-fit: contain;
-    display: block;
+
     margin: 0 auto 25px;
 }
-
-
-.small-title,
-.section-small-title {
-    color: #d4a64e;
-    font-size: 14px;
-    font-weight: 700;
-    letter-spacing: 4px;
-    margin-bottom: 18px;
-}
-
 
 .hero h1 {
     font-size: clamp(60px, 10vw, 130px);
@@ -115,12 +150,6 @@ body {
     letter-spacing: -4px;
     color: #f5f2ed;
 }
-
-.hero h1 span,
-section h2 span {
-    color: #d4a64e;
-}
-
 
 .tagline {
     margin-top: 30px;
@@ -136,43 +165,57 @@ section h2 span {
 .contact-buttons,
 .order-buttons {
     margin-top: 40px;
+
     display: flex;
     justify-content: center;
+    align-items: center;
+
     gap: 15px;
     flex-wrap: wrap;
 }
 
 .btn {
     display: inline-block;
+
     padding: 15px 30px;
+
     text-decoration: none;
+
     font-size: 13px;
     font-weight: 800;
+
     letter-spacing: 1px;
-    transition: 0.3s;
+
+    border-radius: 7px;
+
+    transition: 0.3s ease;
+
+    cursor: pointer;
 }
 
 .primary-btn {
     background: #d4a64e;
     color: #15110a;
     border: 1px solid #d4a64e;
+
+    box-shadow: 0 8px 25px rgba(212,166,78,0.12);
 }
 
 .primary-btn:hover {
-    background: #e6bc69;
-    border-color: #e6bc69;
+    background: #edc36e;
+    border-color: #edc36e;
     transform: translateY(-3px);
 }
 
 .secondary-btn {
-    border: 1px solid #ddd6ca;
+    border: 1px solid #aaa49b;
     color: #f5f2ed;
     background: transparent;
 }
 
 .secondary-btn:hover {
     background: #f5f2ed;
-    color: #111111;
+    color: #111;
     transform: translateY(-3px);
 }
 
@@ -185,21 +228,12 @@ section h2 span {
     background: #11110f;
 }
 
-section h2 {
-    font-size: clamp(40px, 6vw, 70px);
-    line-height: 1;
-    margin-bottom: 60px;
-    font-weight: 900;
-    color: #f5f2ed;
-}
-
-
-/* ================= MENU IMAGE ================= */
-
 .menu-image-container {
     width: 100%;
     max-width: 700px;
+
     margin: 0 auto;
+
     display: flex;
     justify-content: center;
 }
@@ -207,32 +241,36 @@ section h2 {
 .menu-image {
     width: 100%;
     max-width: 700px;
+
     height: auto;
-    display: block;
 
-    border: 1px solid #302c25;
+    border: 1px solid #3a3327;
+    border-radius: 10px;
 
-    box-shadow:
-        0 15px 40px rgba(0, 0, 0, 0.5);
-
-    border-radius: 4px;
+    box-shadow: 0 20px 55px rgba(0,0,0,0.5);
 }
 
 
-/* ================= OLD MENU CARDS ================= */
+/* ================= MENU CARDS ================= */
 
 .menu-grid {
     max-width: 1100px;
     margin: auto;
+
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+
     gap: 25px;
 }
 
 .menu-card {
     background: #181816;
+
     padding: 40px 25px;
+
     border: 1px solid #302c25;
+    border-radius: 10px;
+
     transition: 0.3s;
 }
 
@@ -249,7 +287,6 @@ section h2 {
 .menu-card h3 {
     font-size: 22px;
     margin-bottom: 15px;
-    color: #f5f2ed;
 }
 
 .menu-card p {
@@ -268,20 +305,19 @@ section h2 {
 
 .about-section {
     padding: 130px 7%;
+
     min-height: 600px;
+
     display: flex;
     align-items: center;
 
     background:
-        linear-gradient(
-            rgba(0, 0, 0, 0.82),
-            rgba(0, 0, 0, 0.92)
-        ),
         radial-gradient(
             circle at 80% 50%,
-            #302313,
-            #090909 60%
-        );
+            rgba(212,166,78,0.12),
+            transparent 35%
+        ),
+        #090909;
 }
 
 .about-content {
@@ -290,8 +326,10 @@ section h2 {
 
 .about-content p:last-child {
     color: #aaa49b;
+
     font-size: 18px;
     line-height: 1.9;
+
     max-width: 650px;
 }
 
@@ -306,34 +344,46 @@ section h2 {
 
 .gallery-grid {
     max-width: 1100px;
+
     margin: auto;
+
     display: grid;
+
     grid-template-columns: repeat(4, 1fr);
+
     gap: 18px;
 }
 
 .gallery-box {
     height: 220px;
+
     overflow: hidden;
+
     background: #181816;
+
     border: 1px solid #302c25;
+
+    border-radius: 10px;
+
     transition: 0.3s;
 }
 
 .gallery-box img {
     width: 100%;
     height: 100%;
+
     object-fit: cover;
-    display: block;
+
     transition: 0.4s ease;
 }
 
 .gallery-box:hover {
     border-color: #d4a64e;
+    transform: translateY(-3px);
 }
 
 .gallery-box:hover img {
-    transform: scale(1.05);
+    transform: scale(1.06);
 }
 
 
@@ -341,67 +391,85 @@ section h2 {
 
 .order-section {
     padding: 130px 7%;
+
     text-align: center;
 
     background:
-        linear-gradient(
-            rgba(0, 0, 0, 0.84),
-            rgba(0, 0, 0, 0.95)
-        ),
         radial-gradient(
-            circle at center,
-            #352714,
-            #080808 65%
-        );
+            circle at 50% 35%,
+            rgba(212,166,78,0.14),
+            transparent 32%
+        ),
+        #080808;
 }
 
 .order-description {
     color: #aaa49b;
+
     font-size: 17px;
+
     line-height: 1.7;
+
     max-width: 600px;
+
     margin: -30px auto 45px;
 }
 
 
-/* ================= ORDER FOOD CARDS ================= */
+/* ================= ORDER CARDS ================= */
 
 .order-container {
     max-width: 1100px;
+
     margin: 0 auto;
+
     display: grid;
+
     grid-template-columns: repeat(3, 1fr);
+
     gap: 22px;
+
     text-align: left;
 }
 
 .order-card {
     background: #181816;
+
     border: 1px solid #302c25;
+
+    border-radius: 10px;
+
     overflow: hidden;
-    transition: 0.3s;
+
+    transition: 0.3s ease;
 }
 
 .order-card:hover {
     transform: translateY(-6px);
+
     border-color: #d4a64e;
+
+    box-shadow: 0 15px 40px rgba(0,0,0,0.35);
 }
 
 
-/* ================= ORDER FOOD IMAGE ================= */
+/* ================= FOOD IMAGE ================= */
 
 .order-food-image {
     width: 100%;
     height: 210px;
+
     overflow: hidden;
+
     background: #10100f;
 }
 
 .order-food-image img {
     width: 100%;
     height: 100%;
+
     object-fit: cover;
-    display: block;
+
     transition: 0.4s ease;
 }
 
@@ -410,7 +478,7 @@ section h2 {
 }
 
 
-/* ================= ORDER CARD CONTENT ================= */
+/* ================= CARD CONTENT ================= */
 
 .order-card-content {
     padding: 22px;
@@ -419,13 +487,15 @@ section h2 {
 .order-card-content h3 {
     font-size: 21px;
     margin-bottom: 10px;
-    color: #f5f2ed;
 }
 
 .order-card-content p {
     color: #99938a;
+
     font-size: 14px;
+
     line-height: 1.6;
+
     margin-bottom: 20px;
 }
 
@@ -434,8 +504,12 @@ section h2 {
 
 .order-bottom {
     display: flex;
+
     justify-content: space-between;
+
     align-items: center;
+
+    gap: 15px;
 }
 
 .order-bottom strong {
@@ -445,18 +519,28 @@ section h2 {
 
 .add-btn {
     border: none;
+
+    border-radius: 6px;
+
     background: #d4a64e;
+
     color: #15110a;
+
     padding: 10px 20px;
+
     font-size: 12px;
+
     font-weight: 800;
+
     letter-spacing: 1px;
+
     cursor: pointer;
+
     transition: 0.3s;
 }
 
 .add-btn:hover {
-    background: #e6bc69;
+    background: #edc36e;
     transform: translateY(-2px);
 }
 
@@ -465,36 +549,53 @@ section h2 {
 
 .cart-box {
     max-width: 700px;
+
     margin: 55px auto 0;
+
     padding: 30px;
+
     background: #151513;
+
     border: 1px solid #302c25;
+
+    border-radius: 10px;
+
     text-align: left;
 }
 
 .cart-box h3 {
     font-size: 22px;
+
     margin-bottom: 20px;
+
     letter-spacing: 1px;
 }
 
 .empty-cart {
     color: #77736c;
+
     text-align: center;
+
     padding: 25px 10px;
 }
 
 .cart-item {
     display: flex;
+
     justify-content: space-between;
+
     align-items: center;
+
     gap: 20px;
+
     padding: 15px 0;
+
     border-bottom: 1px solid #302c25;
 }
 
 .cart-item-name {
     font-weight: 700;
+
     margin-bottom: 5px;
 }
 
@@ -504,46 +605,59 @@ section h2 {
 
 .cart-item-price {
     color: #d4a64e;
+
     font-weight: 700;
+
     white-space: nowrap;
 }
 
-
-/* ================= CART TOTAL ================= */
-
 .cart-total {
     display: flex;
+
     justify-content: space-between;
+
     align-items: center;
+
     margin-top: 25px;
-    padding-top: 5px;
+
     font-size: 20px;
 }
 
 .cart-total strong {
     color: #d4a64e;
+
     font-size: 22px;
 }
 
-
-/* ================= PLACE ORDER ================= */
-
 .place-order-btn {
     width: 100%;
+
     margin-top: 25px;
+
     padding: 16px;
+
     border: none;
+
+    border-radius: 7px;
+
     background: #d4a64e;
+
     color: #15110a;
+
     font-size: 14px;
+
     font-weight: 800;
+
     letter-spacing: 1px;
+
     cursor: pointer;
+
     transition: 0.3s;
 }
 
 .place-order-btn:hover {
-    background: #e6bc69;
+    background: #edc36e;
+
     transform: translateY(-2px);
 }
 
@@ -552,18 +666,16 @@ section h2 {
 
 .checkout-section {
     padding: 130px 7%;
+
     text-align: center;
 
     background:
-        linear-gradient(
-            rgba(0, 0, 0, 0.87),
-            rgba(0, 0, 0, 0.96)
-        ),
         radial-gradient(
-            circle at center,
-            #352714,
-            #080808 65%
-        );
+            circle at 50% 30%,
+            rgba(212,166,78,0.12),
+            transparent 32%
+        ),
+        #090909;
 }
 
 .checkout-section h2 {
@@ -572,35 +684,46 @@ section h2 {
 
 .checkout-description {
     color: #aaa49b;
+
     font-size: 17px;
+
     line-height: 1.7;
+
     max-width: 600px;
+
     margin: 0 auto 45px;
 }
 
 .checkout-container {
     width: 100%;
+
     max-width: 650px;
+
     margin: 0 auto;
-    display: flex;
-    justify-content: center;
 }
 
 .checkout-box {
     width: 100%;
+
     padding: 40px;
+
     background: #151513;
+
     border: 1px solid #302c25;
+
     border-radius: 12px;
+
     text-align: left;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+
+    box-shadow: 0 20px 60px rgba(0,0,0,0.45);
 }
 
 .checkout-box h3 {
     color: #f5f2ed;
+
     font-size: 24px;
+
     margin-bottom: 30px;
-    letter-spacing: 1px;
 }
 
 .form-group {
@@ -610,31 +733,47 @@ section h2 {
 
 .form-group label {
     display: block;
+
     color: #eee8de;
+
     font-size: 14px;
+
     font-weight: 700;
+
     margin-bottom: 9px;
 }
 
 .form-group input,
 .form-group textarea {
     width: 100%;
+
     display: block;
+
     padding: 15px 16px;
+
     background: #0b0b0b;
+
     color: #f5f2ed;
+
     border: 1px solid #36322b;
+
     border-radius: 8px;
+
     outline: none;
+
     font-family: Arial, Helvetica, sans-serif;
+
     font-size: 15px;
+
     transition: 0.3s;
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
     border-color: #d4a64e;
-    box-shadow: 0 0 0 2px rgba(212, 166, 78, 0.12);
+
+    box-shadow:
+        0 0 0 2px rgba(212,166,78,0.12);
 }
 
 .form-group input::placeholder,
@@ -647,46 +786,62 @@ section h2 {
     resize: vertical;
 }
 
+
+/* ================= DELIVERY ================= */
+
 .delivery-type {
     margin-top: 28px;
 }
 
 .delivery-type > p {
     color: #eee8de;
+
     font-size: 14px;
+
     font-weight: 700;
+
     margin-bottom: 12px;
 }
 
 .delivery-options {
     display: grid;
+
     grid-template-columns: 1fr 1fr;
+
     gap: 12px;
 }
 
 .delivery-option {
     display: flex;
+
     align-items: center;
+
     gap: 10px;
+
     padding: 15px;
+
     background: #0b0b0b;
+
     border: 1px solid #36322b;
+
     border-radius: 8px;
+
     color: #eee8de;
+
     cursor: pointer;
+
     transition: 0.3s;
 }
 
 .delivery-option:hover {
     border-color: #d4a64e;
-    background: #151513;
 }
 
 .delivery-option input {
     width: 17px;
     height: 17px;
+
     accent-color: #d4a64e;
-    cursor: pointer;
 }
 
 .delivery-option span {
@@ -694,23 +849,38 @@ section h2 {
     font-weight: 600;
 }
 
+
+/* ================= CHECKOUT BUTTON ================= */
+
 .continue-payment-btn {
     width: 100%;
+
     margin-top: 30px;
+
     padding: 16px 20px;
+
     border: none;
+
     border-radius: 8px;
+
     background: #d4a64e;
+
     color: #15110a;
+
     font-size: 14px;
+
     font-weight: 800;
+
     letter-spacing: 1px;
+
     cursor: pointer;
+
     transition: 0.3s;
 }
 
 .continue-payment-btn:hover {
-    background: #e6bc69;
+    background: #edc36e;
+
     transform: translateY(-2px);
 }
 
@@ -719,25 +889,27 @@ section h2 {
 
 .contact-section {
     padding: 130px 7%;
+
     text-align: center;
 
     background:
-        linear-gradient(
-            rgba(0, 0, 0, 0.82),
-            rgba(0, 0, 0, 0.95)
-        ),
         radial-gradient(
-            circle,
-            #352714,
-            #080808 65%
-        );
+            circle at 50% 35%,
+            rgba(212,166,78,0.13),
+            transparent 35%
+        ),
+        #090909;
 }
 
 .contact-section > p:not(.section-small-title) {
     color: #aaa49b;
+
     font-size: 17px;
+
     line-height: 1.7;
+
     max-width: 600px;
+
     margin: 0 auto;
 }
 
@@ -746,9 +918,13 @@ section h2 {
 
 footer {
     padding: 30px;
+
     text-align: center;
+
     background: #050505;
+
     color: #68635d;
+
     font-size: 13px;
 }
 
@@ -757,7 +933,9 @@ footer {
 
 section.hidden {
     opacity: 0;
+
     transform: translateY(40px);
+
     transition:
         opacity 0.8s ease,
         transform 0.8s ease;
@@ -765,6 +943,7 @@ section.hidden {
 
 section.show {
     opacity: 1;
+
     transform: translateY(0);
 }
 
@@ -780,7 +959,6 @@ section.show {
     .gallery-grid {
         grid-template-columns: repeat(2, 1fr);
     }
-
 }
 
 
@@ -789,24 +967,32 @@ section.show {
 @media (max-width: 768px) {
 
     .navbar {
-        padding: 18px 5%;
+        padding: 16px 5%;
     }
 
     .logo {
-        font-size: 17px;
+        font-size: 16px;
     }
 
     .navbar nav {
-        gap: 12px;
+        gap: 10px;
+
+        overflow-x: auto;
+
+        scrollbar-width: none;
+    }
+
+    .navbar nav::-webkit-scrollbar {
+        display: none;
     }
 
     .navbar nav a {
-        font-size: 11px;
+        font-size: 10px;
+        white-space: nowrap;
     }
 
     .hero {
-        padding-left: 15px;
-        padding-right: 15px;
+        padding: 115px 15px 55px;
     }
 
     .hero h1 {
@@ -820,21 +1006,19 @@ section.show {
     .hero-logo {
         width: 140px;
         height: 140px;
-        margin-bottom: 20px;
+    }
+
+    section h2 {
+        margin-bottom: 40px;
+    }
+
+    .menu-section,
+    .gallery-section {
+        padding: 95px 5%;
     }
 
     .menu-grid {
         grid-template-columns: 1fr;
-    }
-
-    .menu-image-container {
-        width: 100%;
-        padding: 0 5px;
-    }
-
-    .menu-image {
-        width: 100%;
-        max-width: 100%;
     }
 
     .gallery-grid {
@@ -846,12 +1030,9 @@ section.show {
         height: 160px;
     }
 
-    section h2 {
-        margin-bottom: 40px;
-    }
-
     .about-section {
         min-height: 500px;
+        padding: 100px 5%;
     }
 
     .about-content p:last-child {
@@ -872,30 +1053,13 @@ section.show {
         gap: 18px;
     }
 
-    .order-card {
-        width: 100%;
-    }
-
     .order-food-image {
         height: 220px;
     }
 
-    .order-card-content {
-        padding: 20px;
-    }
-
-    .add-btn {
-        padding: 11px 22px;
-    }
-
     .cart-box {
-        width: 100%;
         margin-top: 40px;
         padding: 22px;
-    }
-
-    .cart-item {
-        gap: 10px;
     }
 
     .checkout-section {
@@ -906,27 +1070,17 @@ section.show {
         font-size: 42px;
     }
 
-    .checkout-description {
-        font-size: 15px;
-        margin-bottom: 35px;
-    }
-
     .checkout-box {
         padding: 28px 22px;
-        border-radius: 10px;
     }
 
-    .checkout-box h3 {
-        font-size: 21px;
-        margin-bottom: 25px;
+    .delivery-options {
+        grid-template-columns: 1fr;
     }
 
-    .form-group input,
-    .form-group textarea {
-        font-size: 15px;
-        padding: 14px;
+    .contact-section {
+        padding: 100px 5%;
     }
-
 }
 
 
@@ -935,36 +1089,44 @@ section.show {
 @media (max-width: 480px) {
 
     .navbar {
-        padding: 15px 4%;
+        padding: 14px 4%;
     }
 
     .logo {
-        font-size: 14px;
+        font-size: 13px;
     }
 
     .navbar nav {
-        gap: 8px;
+        gap: 7px;
     }
 
     .navbar nav a {
-        font-size: 9px;
+        font-size: 8px;
+    }
+
+    .hero {
+        padding-top: 105px;
     }
 
     .hero h1 {
-        font-size: 55px;
-    }
-
-    .tagline {
-        font-size: 14px;
+        font-size: 52px;
     }
 
     .hero-logo {
-        width: 120px;
-        height: 120px;
+        width: 115px;
+        height: 115px;
+    }
+
+    .tagline {
+        font-size: 13px;
     }
 
     .btn {
-        padding: 13px 22px;
+        padding: 13px 20px;
+    }
+
+    section h2 {
+        font-size: 36px;
     }
 
     .gallery-grid {
@@ -976,15 +1138,19 @@ section.show {
     }
 
     .order-section {
-        padding: 90px 5%;
+        padding: 85px 5%;
     }
 
     .order-food-image {
         height: 190px;
     }
 
+    .order-card-content {
+        padding: 18px;
+    }
+
     .order-card-content h3 {
-        font-size: 19px;
+        font-size: 18px;
     }
 
     .order-card-content p {
@@ -996,15 +1162,11 @@ section.show {
     }
 
     .add-btn {
-        padding: 10px 18px;
+        padding: 10px 17px;
     }
 
     .cart-box {
         padding: 18px;
-    }
-
-    .cart-box h3 {
-        font-size: 20px;
     }
 
     .cart-total {
@@ -1020,7 +1182,7 @@ section.show {
     }
 
     .checkout-section h2 {
-        font-size: 34px;
+        font-size: 33px;
     }
 
     .checkout-box {
@@ -1031,17 +1193,8 @@ section.show {
         font-size: 20px;
     }
 
-    .delivery-options {
-        grid-template-columns: 1fr;
-    }
-
-    .delivery-option {
-        padding: 14px;
-    }
-
     .continue-payment-btn {
         padding: 15px;
         font-size: 13px;
     }
-
 }
